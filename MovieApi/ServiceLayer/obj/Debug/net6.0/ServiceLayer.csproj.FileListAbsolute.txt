@@ -1,0 +1,12 @@
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\bin\Debug\net6.0\ServiceLayer.deps.json
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\bin\Debug\net6.0\ServiceLayer.dll
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\bin\Debug\net6.0\ServiceLayer.pdb
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.AssemblyReference.cache
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfoInputs.cache
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfo.cs
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CoreCompileInputs.cache
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.dll
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\refint\ServiceLayer.dll
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.pdb
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ref\ServiceLayer.dll

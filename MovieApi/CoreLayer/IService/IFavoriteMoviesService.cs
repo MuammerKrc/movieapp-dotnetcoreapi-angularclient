@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayer.UnitOfWorks
+namespace CoreLayer.IService
 {
-    public class UnitOfWork
+    public interface IFavoriteMoviesService
     {
+
     }
 }

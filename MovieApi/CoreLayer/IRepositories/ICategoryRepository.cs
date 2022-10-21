@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CoreLayer.Dtos.CategoryDtos;
 using CoreLayer.IRepositories.IBaseRepository;
 using CoreLayer.Models;
 
 namespace CoreLayer.IRepositories
 {
-    public interface ICategoryRepository:IBaseRepository<Category,int>
+    public interface ICategoryRepository : IBaseRepository<Category, int>
     {
+        
+
+
     }
 }

@@ -13,3 +13,5 @@ F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\DataLayer\obj\Debug\net6.0\
 F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\DataLayer\bin\Debug\net6.0\CoreLayer.dll
 F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\DataLayer\bin\Debug\net6.0\CoreLayer.pdb
 F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CopyComplete
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\DataLayer\bin\Debug\net6.0\DataLayer.runtimeconfig.json
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache

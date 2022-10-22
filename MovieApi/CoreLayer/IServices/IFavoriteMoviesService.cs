@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CoreLayer.IService
+namespace CoreLayer.IServices
 {
-    public interface IUserService
+    public interface IFavoriteMoviesService
     {
+
     }
 }

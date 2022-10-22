@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CoreLayer.Dtos;
 using CoreLayer.Dtos.TokenDtos;
 
-namespace CoreLayer.IService
+namespace CoreLayer.IServices
 {
     public interface IAuthService
     {
-        Task<TokenDto> LoginAsync();
-        Task<TokenDto> RefreshTokenLoginAsync(string refreshToken);
+        Task<Response<TokenDto>> LoginAsync();
+        Task<Response<TokenDto>> RefreshTokenLoginAsync(string refreshToken);
     }
 }

@@ -8,15 +8,15 @@ namespace CoreLayer.Dtos
 {
     public class Response<TModel>
     {
-        private bool IsSuccess { get; set; }
-        private TModel Data { get; set; }
-        private List<string> Errors { get; set; } = new List<string>();
+        public bool IsSuccess { get; set; }
+        public TModel Data { get; set; }
+        public List<string> Errors { get; set; } = new List<string>();
 
-        private string Message = "";
+        public string Message = "";
 
-        private bool ShowError = true;
+        public bool ShowError = true;
 
-        private int ErrorStatus = 0;
+        public int ErrorStatus = 0;
 
         public static Response<TModel> SuccessResponse(TModel data, string message = "")
         {

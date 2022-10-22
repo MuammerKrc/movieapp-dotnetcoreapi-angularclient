@@ -10,3 +10,8 @@ F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6
 F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\refint\ServiceLayer.dll
 F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.pdb
 F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ref\ServiceLayer.dll
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\bin\Debug\net6.0\CoreLayer.dll
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\bin\Debug\net6.0\DataLayer.dll
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\bin\Debug\net6.0\CoreLayer.pdb
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\bin\Debug\net6.0\DataLayer.pdb
+F:\ownerProject\movieapp-netcoreapi-angular\MovieApi\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CopyComplete

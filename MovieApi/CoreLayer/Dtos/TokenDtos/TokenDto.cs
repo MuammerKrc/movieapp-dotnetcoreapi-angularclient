@@ -14,7 +14,5 @@ namespace CoreLayer.Dtos.TokenDtos
         public string RefresToken { get; set; }
         public DateTime ExpirationAccessToken { get; set; }
         public DateTime ExpirationRefreshToken { get; set; }
-        public string UserId { get; set; }
-        public AppUserDto User { get; set; }
     }
 }

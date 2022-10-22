@@ -8,8 +8,8 @@ using CoreLayer.Models.JwtModels;
 
 namespace CoreLayer.IRepositories
 {
-    public interface IJWTokenRepository : IBaseRepository<JWToken, int>
-    {
+    //public interface IJWTokenRepository : IBaseRepository<JWToken, int>
+    //{
 
-    }
+    //}
 }

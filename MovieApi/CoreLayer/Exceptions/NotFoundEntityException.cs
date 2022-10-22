@@ -18,11 +18,6 @@ namespace CoreLayer.Exceptions
 
         }
 
-        // Creates a new Exception.  All derived classes should
-        // provide this constructor.
-        // Note: the stack trace is not started until the exception
-        // is thrown
-        //
         public NotFoundEntityException(string? message, Exception? innerException) : base(message, innerException)
         {
 

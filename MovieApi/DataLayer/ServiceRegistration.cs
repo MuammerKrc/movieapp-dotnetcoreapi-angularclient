@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using CoreLayer.ConfigurationModels;
 using Microsoft.AspNetCore.Identity;
 
 namespace DataLayer
@@ -35,11 +36,12 @@ namespace DataLayer
                 opt.Password.RequiredUniqueChars = 3;
             }).AddEntityFrameworkStores<MovieDbContext>().AddDefaultTokenProviders();
 
+
             //repository registered
             services.AddScoped(typeof(IBaseRepository<,>), typeof(BaseRepository<,>));
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IFavoriteMoviesRepository, FavoriteMoviesRepository>();
-            //services.AddScoped<IJWTokenRepository, JWTokenRepository>();
+
         }
     }
 }

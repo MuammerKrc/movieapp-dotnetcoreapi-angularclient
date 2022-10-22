@@ -76,12 +76,10 @@ namespace DataLayer.Repositories.BaseRepositories
 
         }
 
-        public async Task<IQueryable<TModel>> GetWhereAsync(Expression<Func<TModel, bool>> method, bool tracking = false)
+        public IQueryable<TModel> GetWhereAsync(Expression<Func<TModel, bool>> method)
         {
-            var querableRequest = _entities.Where(method);
-            if (!tracking)
-                querableRequest = querableRequest.AsNoTracking();
-            return querableRequest;
+           return _entities.Where(method).AsQueryable();
+            
         }
 
         public async Task<TModel> GetSingleAsync(Expression<Func<TModel, bool>> method, bool tracking = false)

@@ -16,6 +16,7 @@ namespace DataLayer.Repositories
     {
         public CategoryRepository(MovieDbContext context) : base(context)
         {
+
         }
     }
 }

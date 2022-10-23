@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MovieComponent } from './movie.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +10,9 @@ import { MovieComponent } from './movie.component';
     MovieComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([{path:"",component:MovieComponent}])
+
   ]
 })
 export class MovieModule { }

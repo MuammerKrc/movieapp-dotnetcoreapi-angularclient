@@ -1,41 +1,73 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
-  <a class="navbar-brand text-white" routerLink="#">Movie App</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav " style="width: 100%;">
-      <li class="nav-item active">
-        <a class="nav-link active " routerLink="/movies">Movies</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link active " routerLink="/movies/movie-create">Movie Create</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link active " routerLink="/movies/template-form">Template Movie Create</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link active " routerLink="/movies/reactive-form">Reactive Movie Create</a>
-      </li>
-    </ul>
-    <ng-container>
-      <ul class="navbar-nav ml-auto" style="margin-right: 20px;">
-        <li class="nav-item active">
-          <a class="nav-link active" routerLink="#">user email</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link active">Logout</a>
-        </li>
-      </ul>
-    </ng-container>
-  </div>
-</nav>
+<div class="row">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="col-md-2"></div>
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="#">ECommerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/basket">Basket</a>
+          </li>
+          <!-- <li class="nav-item" *ngIf="!authService.isAuthenticated">
+            <a class="nav-link active" aria-current="page" routerLink="/register">Register</a>
+          </li>
+          <li class="nav-item" *ngIf="!authService.isAuthenticated">
+            <a class="nav-link active" aria-current="page" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item" *ngIf="authService.isAuthenticated">
+            <a class="nav-link active" aria-current="page" style="color:red;cursor: pointer;"
+              (click)="logout()">Logout</a>
+          </li>
+          <ng-container *ngIf="authService.isAuthenticated">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" routerLink="/admin">Yönetim Paneli</a>
+            </li> -->
+          <!-- </ng-container> -->
 
-<ng-template #unAuthorize>
-  <ul class="navbar-nav ml-auto" style="margin-right: 20px;">
-    <li class="nav-item active">
-      <a class="nav-link active" routerLink="/auth">Login</a>
-    </li>
-  </ul>
-</ng-template>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li> -->
+        </ul>
+        <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </nav>
+</div>
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-9">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="col-md-2"></div>
+</div>
+<div class="row">
+  <!-- <ngx-spinner type="ball-atom"></ngx-spinner> -->
+</div>
+
+<!-- <app-basket></app-basket> -->

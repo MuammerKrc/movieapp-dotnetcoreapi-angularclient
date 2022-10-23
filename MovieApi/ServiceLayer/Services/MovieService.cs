@@ -3,32 +3,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using CoreLayer.Dtos;
 using CoreLayer.Dtos.MovieDtos;
 using CoreLayer.IServices;
+using CoreLayer.IUnitOfWorks;
+using CoreLayer.Models;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace ServiceLayer.Services
 {
-    public class MovieService:IMovieService
+    public class MovieService : IMovieService
     {
-        public Task<Response<IEnumerable<MovieDto>>> GetAllMovie()
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper mapper;
+
+        public MovieService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
+            this.mapper = mapper;
         }
 
-        public Task<Response<MovieDto>> GetMovieById(int id)
+        public async Task<Response<IEnumerable<MovieDto>>> GetAllMovie()
         {
-            throw new NotImplementedException();
+            var response = await _unitOfWork.MovieRepository.GetAllAsync();
+            return Response<IEnumerable<MovieDto>>.SuccessResponse(mapper.Map<IEnumerable<MovieDto>>(response));
         }
 
-        public Task<Response<NoResponse>> CreateMovie(MovieDto movie)
+        public async Task<Response<MovieDto>> GetMovieById(int id)
         {
-            throw new NotImplementedException();
+            var response = await _unitOfWork.MovieRepository.GetByIdAsync(id);
+            return Response<MovieDto>.SuccessResponse(mapper.Map<MovieDto>(response));
         }
 
-        public Task<Response<NoResponse>> RemoveMovie(int id)
+        public async Task<Response<NoResponse>> CreateMovie(MovieDto movie)
         {
-            throw new NotImplementedException();
+            _unitOfWork.MovieRepository.Add(mapper.Map<Movie>(movie));
+            await _unitOfWork.SaveAsync();
+            return Response<NoResponse>.SuccessResponse();
+
+        }
+
+        public async Task<Response<NoResponse>> RemoveMovie(int id)
+        {
+            await _unitOfWork.MovieRepository.SoftDelete(id);
+            await _unitOfWork.SaveAsync();
+            return Response<NoResponse>.SuccessResponse();
         }
     }
 }

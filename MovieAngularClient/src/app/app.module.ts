@@ -19,7 +19,9 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     ComponentsModule,
     LayoutModule
   ],
-  providers: [],
+  providers: [
+    {provide:"baseApiUrl",useValue:"https://localhost:7256/api",multi:true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,10 +1,10 @@
 ﻿using System.Collections;
-using AutoMapper;
 using CoreLayer.ConfigurationModels;
 using CoreLayer.IServices;
 using CoreLayer.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ServiceLayer.Mapping;
 using ServiceLayer.Services;
 
 namespace ServiceLayer

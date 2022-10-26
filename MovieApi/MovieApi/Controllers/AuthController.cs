@@ -16,12 +16,14 @@ namespace MovieApi.Controllers
             _authService = authService;
         }
 
+        [HttpPost]
         public async Task<IActionResult> Login(LoginDto login)
         {
             var result = await _authService.LoginAsync(login);
             return Ok(result);
         }
 
+        [HttpPost]
         public async Task<IActionResult> LoginWithRefreshToken(string refreshToken)
         {
             var result=await _authService.RefreshTokenLoginAsync(refreshToken);

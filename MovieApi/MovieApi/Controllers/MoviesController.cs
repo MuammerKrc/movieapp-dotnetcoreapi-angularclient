@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MovieApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class MoviesController:ControllerBase
     {
@@ -32,7 +32,7 @@ namespace MovieApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateMovie(MovieDto dto)
+        public async Task<IActionResult> CreateMovie(MovieCreateDto dto)
         {
             var result = await _movieService.CreateMovie(dto);
             return Ok(result);

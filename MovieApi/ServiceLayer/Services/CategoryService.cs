@@ -37,7 +37,17 @@ namespace ServiceLayer.Services
 
         public async Task<Response<CategoryDto>> GetCategoryWithMovieById(int id)
         {
-            var response = await _unitOfWork.CategoryRepository.GetWhereAsync(i => i.Id == id).Include(i => i.Movies).ToListAsync();
+            var response = await _unitOfWork.CategoryRepository.GetContext().Where(i => i.Id == id)
+                .Include(i => i.Movies).Select(x=>new Category()
+                {
+                    Movies = x.Movies,
+                    Id = x.Id,
+                    SoftDeleted = x.SoftDeleted,
+                    CreatedDate = x.CreatedDate,
+                    Title = x.Title,
+                    UpdateDate = x.UpdateDate
+                }).AsNoTracking().FirstOrDefaultAsync();
+            
             return Response<CategoryDto>.SuccessResponse(_mapper.Map<CategoryDto>(response));
         }
 

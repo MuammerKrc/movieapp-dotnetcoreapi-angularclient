@@ -11,6 +11,6 @@ namespace CoreLayer.Dtos.CategoryDtos
     public class CategoryDto : BaseDto<int>
     {
         public string Title { get; set; }
-        public ICollection<MovieDto> Movies { get; set; }
+        public List<MovieDto> Movies { get; set; }
     }
 }

@@ -36,7 +36,7 @@ namespace ServiceLayer.Services
             return Response<MovieDto>.SuccessResponse(mapper.Map<MovieDto>(response));
         }
 
-        public async Task<Response<NoResponse>> CreateMovie(MovieDto movie)
+        public async Task<Response<NoResponse>> CreateMovie(MovieCreateDto movie)
         {
             _unitOfWork.MovieRepository.Add(mapper.Map<Movie>(movie));
             await _unitOfWork.SaveAsync();

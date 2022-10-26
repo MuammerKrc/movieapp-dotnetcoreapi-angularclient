@@ -15,7 +15,7 @@ namespace MovieApi.Controllers
         {
             _userService = userService;
         }
-
+        [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserDto dto)
         {
             var result = await _userService.CreateAsync(dto);
